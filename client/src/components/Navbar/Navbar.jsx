@@ -1,5 +1,6 @@
 /* eslint-disable no-unused-vars */
 import React from 'react'
+import './Navbar.css'
 
 export default function Navbar() {
   return (

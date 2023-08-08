@@ -7,6 +7,9 @@ import Instagram1 from './images/inst1.png'
 import Tweeter from './images/tweet1.png'
 import Tweeter1 from './images/tweet.png'
 import Picture from './images/picture.png'
+import Calendar from './images/calendar.png'
+import Story from './images/story.png'
+import Connect from './images/connect.png'
 
 export default function MainPage() {
     const [active, setActive] = useState(1)
@@ -23,15 +26,15 @@ export default function MainPage() {
                 <h4>Add Image</h4>
             </div>
             <div className="main-polar">
-                <img src={Picture} />
+                <img src={Story} />
                 <h4>Add Story</h4>
             </div>
             <div className="main-polar">
-                <img src={Picture} />
+                <img src={Calendar} />
                 <h4>Calendar</h4>
             </div>
             <div className="main-polar">
-                <img src={Picture} />
+                <img src={Connect} />
                 <h4>Connect account</h4>
             </div>
         </div>

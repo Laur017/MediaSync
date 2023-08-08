@@ -4,6 +4,8 @@ import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import Login from './components/Login/Login'
+import MainPage from './components/MainPage/MainPage'
+
 import { useState } from 'react'
 
 function App() {
@@ -19,7 +21,7 @@ function App() {
       <Navbar />
       <Routes>
         <Route path='/' element={<Home handleCover={handleCover}/>} />
-        
+        <Route path='/main' element={<MainPage />} />
       
       </Routes>
       <Footer />

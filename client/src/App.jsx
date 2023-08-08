@@ -1,4 +1,5 @@
 import './App.css'
+import {Routes, Route} from 'react-router-dom'
 import Footer from './components/Footer/Footer'
 import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
@@ -16,7 +17,11 @@ function App() {
   return (
     <div className='app-main-div'>
       <Navbar />
-      <Home handleCover={handleCover}/>
+      <Routes>
+        <Route path='/' element={<Home handleCover={handleCover}/>} />
+        
+      
+      </Routes>
       <Footer />
       {cover && <>
                   <div className="cover" onClick={handleCover}></div>

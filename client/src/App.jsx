@@ -5,6 +5,7 @@ import Home from './components/Home/Home'
 import Navbar from './components/Navbar/Navbar'
 import Login from './components/Login/Login'
 import MainPage from './components/MainPage/MainPage'
+import AddPost from './components/AddPost/AddPost'
 
 import { useState } from 'react'
 
@@ -22,7 +23,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home handleCover={handleCover}/>} />
         <Route path='/main' element={<MainPage />} />
-      
+        <Route path='/add-post' element={<AddPost />} />
       </Routes>
       <Footer />
       {cover && <>

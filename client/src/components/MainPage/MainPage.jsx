@@ -10,9 +10,11 @@ import Picture from './images/picture.png'
 import Calendar from './images/calendar.png'
 import Story from './images/story.png'
 import Connect from './images/connect.png'
+import { useNavigate } from 'react-router-dom'
 
 export default function MainPage() {
     const [active, setActive] = useState(1)
+    const navigate = useNavigate()
   return (
     <div className='main-page'>
         <div className="main-page-left">
@@ -21,9 +23,9 @@ export default function MainPage() {
             <img src={active === 3 ? Tweeter1 : Tweeter} onClick={()=>setActive(3)}/>
         </div>
         <div className="main-page-right">
-            <div className="main-polar">
+            <div className="main-polar" onClick={()=>navigate('/add-post')}>
                 <img src={Picture} />
-                <h4>Add Image</h4>
+                <h4>Add Post</h4>
             </div>
             <div className="main-polar">
                 <img src={Story} />

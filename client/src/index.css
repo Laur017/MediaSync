@@ -248,6 +248,12 @@ body{
   border-radius: 1rem;
   letter-spacing: 2px;
   border: 1px solid #A2D2FF;
+  transition: all 0.3s ease-in;
+}
+
+.add-post button:hover{
+  transition: all 0.3s ease-in;
+  background-color: #5bb0ff;
 }
 
 .add-post-right{
@@ -278,6 +284,7 @@ body{
 }
 
 .insta-up span {
+  font-size: 0.5rem;
   color: gray;
 }
 
